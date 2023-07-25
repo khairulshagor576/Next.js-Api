@@ -1,5 +1,8 @@
+import { users } from "@/utility/db";
 import { NextResponse } from "next/server";
 
-export function GET(request){
-    return NextResponse.json({name:"khairul",age:32},{status:200})
+export function GET(request)
+{
+    const data = users;
+    return NextResponse.json(data,{status:200});
 }
