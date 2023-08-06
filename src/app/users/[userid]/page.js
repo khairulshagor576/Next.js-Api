@@ -8,7 +8,7 @@ async function getUser(id) {
 export default async function ({params}) {
     //console.log(params.userid);
     let user = await getUser(params.userid);
-    console.log(user);
+    //console.log(user);
     return (
         <div>
             <h1>User Details</h1>
