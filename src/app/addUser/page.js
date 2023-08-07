@@ -16,7 +16,9 @@ export default function page () {
         //console.log(response);
         if(response.success)
         {
-          alert("New User created!");
+          alert("User created!");
+        }else{
+            alert("Something is going to be wrong! Please try again.");
         }
 
     } 
