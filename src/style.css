@@ -20,3 +20,8 @@
     margin-top: 100px;
     text-align: center;
 }
+
+.list-user span {
+    display: inline-block;
+    width: 300px;
+}
