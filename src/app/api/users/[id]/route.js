@@ -20,3 +20,15 @@ export async function PUT (request,content) {
     //console.log();
     return NextResponse.json({result:payload,success:true},{status:200});
 }
+
+export function DELETE (request,content) 
+{
+    let id = content.params.id;
+
+    if(id) 
+    {
+        return NextResponse.json({result:"User data is deleted!",success:true},{status:200});
+    }else{
+        return NextResponse.json({result:"User data is not deleted!, please try age and check id number is valid!.",success:false},{status:400});
+    }
+}
